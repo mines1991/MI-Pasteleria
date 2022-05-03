@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Inicio</title>
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <a name= "top"></a>
+            <div class="header-logo"><a href="index.html"><img src="imagenes/logo3.png" alt="logo"></a></div>
+            <nav class="header-menubar">
+                <ul name="menu">
+                    <li><a href="Index.html">Inicio</a></li>
+                    <li><a href="tartas.html">Tartas</a></li>
+                    <li><a href="tortas.html">Tortas</a></li>
+                    <li><a href="postres.html">Postres</a></li>
+                    <li><a href="postresárabes.html">Arabes</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="contenido-ppal">
+                <section class="secciones">
+                     <!-- Animación -->
+                    <div class="gif-ppal">
+                        <img id="gif-ppal" src="imagenes/fotos/baklava_bwxr0Xbx.gif" alt="gif">
+                    </div> 
+                </section>
+                <section class="secciones">
+                    <article>
+                        <h1>¡Bienvenidos a esta pequeña aventura de la pastelería!</h1>
+                        <p>Desde chiquita he estado rodeada por la cocina, mi mama y mis abuelas han sido unas excelentes cocineras y, probablemente de ahí viene mi amor por esto.
+                            Empecé cocinando cosas saladas pero, de a poco, fui agarrando el gustito por los postres y las cosas dulces.
+                            Los primeros tips y recetas que fui aprendiendo fueron gracias a ellas  y me enseñaron a dar amor desde un rico plato de comida, porque lo más lindo de cocinar es hacerlo para las personas que uno quiere.
+                            Disfruto mucho cocinar y si bien lo mío es amateur, con el tiempo fui complejizando las recetas y sumando conocimientos, por eso me gustaría poder pasar algo de todo lo que he aprendido en estos años.
+                            La idea de esta página es poder compartir algunas recetas propias, recetas tomadas de alguno de mis pasteleros favoritos y pasar algunos de mis tips.</p>
+                    </article>
+                </section>
+            </div>
+            <aside class="contenido-sec">
+                 <!-- Imagen de instagram -->
+                <iframe src="https://www.instagram.com/p/CVWWjOMJYY7/embed" height="400" width="100%" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+            </aside>           
+            <form action="https://formspree.io/f/xayazjyq" method="post" class="formulario" id="formulario">
+		
+                <!-- Grupo: Nombre -->
+                <div class="formulario__grupo" id="grupo__nombre">
+                    <label for="nombre" class="formulario__label">Nombre</label>
+                    <div class="formulario__grupo-input">
+                        <input type="nombre" class="formulario__input" name="nombre" id="nombre" placeholder="Juan Perez">
+                        <i class="formulario__validacion-estado fa-regular fa-circle-xmark"></i>
+                    </div>
+                    <p class="formulario__input-error">Completar nombre</p>
+                </div>
+    
+                <!-- Grupo: Correo Electronico -->
+                <div class="formulario__grupo" id="grupo__correo">
+                    <label for="correo" class="formulario__label">Correo Electrónico</label>
+                    <div class="formulario__grupo-input">
+                        <input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com">
+                        <i class="formulario__validacion-estado fa-regular fa-circle-xmark"></i>
+                    </div>
+                    <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+                </div>
+    
+                <!-- Grupo: Quiero recibir notificacion -->
+                <div class="formulario__grupo" id="grupo__suscripcion">
+                    <label class="formulario__label">
+                        <input class="formulario__checkbox" type="checkbox" name="suscripcion" id="suscripcion">
+                        Quiero recibir informacion
+                    </label>
+                </div>
+    
+                <div class="formulario__mensaje" id="formulario__mensaje">
+                    <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+                </div>
+    
+                <div class="formulario__grupo formulario__grupo-btn-enviar">
+                    <button type="submit" class="formulario__btn">Enviar</button>
+                    <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+                </div>
+            </form>
+        </main>
+        <script src="principal.js"></script>
+	<script src="http://kit.fontawesome.com/2c36e9b7b1.js" crossorigin=”anonymous” ></script>
+        <footer>
+            <nav class="footer">
+                <ul>
+                    <li><a href="https://www.instagram.com/minescb_91/">Instagram</a></li>
+                    <li><a href="mailto:minescb.91@gmail.com?subject=Consulta">Correo</li>
+                    <li><a href="#top">Volver Inicio</a></li>
+                </ul>    
+            </nav>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,524 @@
+*{
+    margin: 15px 5px 15px 5px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+html{
+    height: 100%;
+}
+body, header, main, footer {
+    min-height: 20px;
+    margin: 0.5rem;
+    min-width: 200px;
+}
+body {
+    background:#FFDEAD;
+    
+}
+header {
+    background-color:#98FB98;
+    box-shadow: 0 0 0.6rem grey solid;
+    font-size: 2.5vw;
+    font-family:'Acme', sans-serif;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+main{
+    min-height: 200px;
+    overflow: center;
+    margin: 0.5rem;
+    background-color: 	#ADD8E6;
+}
+footer {
+    background-color: #FFB6C1;
+    font-family: 'Acme', sans-serif;
+    font-size: 1.5vw;
+}
+.header-menubar {
+    margin: 0 0 0.5rem 1rem;
+    display: inline-block;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    align-items: center;
+    transition: transform .2s;
+}
+    
+.header-menubar ul {
+    list-style: none;
+}
+.header-menubar li {
+    float: left;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 0.5rem 0;
+    font-size: 2.5rem;
+}
+.header-logo  {
+    display: inline-block;
+    margin: 0.5rem;
+    
+}
+.header-menubar a {
+    text-decoration: none;
+    color: #4B0082 ;
+     
+}
+.header-menubar a:hover {
+    color: #FF6347;
+    
+}   
+.header-menubar li:hover
+{
+    transform: scale(1.5);
+}
+/* ----- -----  Pagina principal ----- ----- */
+main>div {
+    min-height: 180px;
+    margin: 0.5rem;
+    height: auto;
+    float: CENTER;
+    width: auto;
+    min-height: 180px;
+}
+main>aside {
+    margin: 0.5rem;
+    min-height: 480;
+    min-width: 25%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.secciones {
+    min-height: 180px;
+    margin: 0.5rem;   
+}
+.secciones article {
+    margin: 0.5rem;
+    min-height: 180px;
+    height: auto;
+    width: auto;
+    
+}
+.secciones article h1
+{
+    font-size: 250%;
+    font-weight: bold;
+    color: #FFA500;
+    text-align: center;
+
+}   
+.secciones article p
+{
+    font-size: 1.5em;
+    color: #9370D8;
+    text-align: justify;
+    
+}   
+.secciones img {
+    margin: 0.5rem;
+    min-height:100%;
+    min-width: 25%;
+    float:center;
+    width: 60%;
+}
+
+aside>img {
+    min-height:100%;
+    min-width: 25%;
+    margin: 0.5rem;
+    float:center;
+    
+}
+.Recetas {
+    min-height: 180px;
+    min-width: 25%;
+    margin: 0.5rem;
+    float:center;
+    width: auto;
+}
+.Recetas ul {
+    list-style: none;
+}
+main>form {
+    font-family: 'Ubuntu', sans-serif;
+}
+/* ----- ----- Recetas ----- ----- */
+img {
+    margin: 0.5rem;
+    min-height:100%;
+    min-width: 25%;
+    float:center;
+    width: 50%;
+    transition: transform .5s;
+}
+img:hover
+{
+    transform: scale(1.1);
+}
+.Recetas article h1{
+    font-size: 250%;
+    font-weight: bold;
+    color: #C71585;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.Recetas article h2{
+    font-size: 250%;
+    font-weight: bold;
+    color: #c71543;
+    text-align: justify;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.Recetas article h3{
+    font-size: 200%;
+    font-weight: bold;
+    color: #c71512;
+    text-align: justify;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.Recetas article li{
+    font-size: 30px;
+    font-weight: normal;
+    color: #483d8d;
+    text-align: justify;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.Recetas article p {
+    font-size: 1.5em;
+    color: #483D8B	;
+    text-align: justify;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}  
+.formulario {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;
+}
+
+.formulario__label {
+	display: block;
+	font-weight: 700;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.formulario__grupo-input {
+	position: relative;
+}
+
+.formulario__input {
+	width: 100%;
+	border: 3px solid transparent;
+	border-radius: 3px;
+	height: 45px;
+	line-height: 45px;
+	padding: 0 40px 0 10px;
+	transition: .3s ease all;
+}
+
+.formulario__input:focus {
+	border: 3px solid #0075FF;
+	outline: none;
+	box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
+}
+
+.formulario__input-error {
+	font-size: 12px;
+	margin-bottom: 0;
+	display: none;
+}
+
+.formulario__input-error-activo {
+	display: block;
+}
+
+
+.formulario__validacion-estado {
+	position: absolute;
+	right: 10px;
+	bottom: 15px;
+	z-index: 100;
+	font-size: 16px;
+	opacity: 0;
+}
+
+.formulario__checkbox {
+	margin-right: 10px;
+}
+
+.formulario__grupo-terminos, 
+.formulario__mensaje,
+.formulario__grupo-btn-enviar {
+	grid-column: span 2;
+}
+
+.formulario__mensaje {
+	height: 45px;
+	line-height: 45px;
+	background: #F66060;
+	padding: 0 15px;
+	border-radius: 3px;
+	display: none;
+}
+
+.formulario__mensaje-activo {
+	display: block;
+}
+
+.formulario__mensaje p {
+	margin: 0;
+}
+
+.formulario__grupo-btn-enviar {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.formulario__btn {
+	height: 45px;
+	line-height: 45px;
+	width: 30%;
+	background: #000;
+	color: #fff;
+	font-weight: bold;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: .1s ease all;
+}
+
+.formulario__btn:hover {
+	box-shadow: 3px 0px 30px rgba(163,163,163, 1);
+}
+
+.formulario__mensaje-exito {
+	font-size: 14px;
+	color: #119200;
+	display: none;
+}
+
+.formulario__mensaje-exito-activo {
+	display: block;
+}
+
+/* ----- -----  Estilos para Validacion ----- ----- */
+.formulario__grupo-correcto .formulario__validacion-estado {
+	color: #1ed12d;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__label {
+	color: #bb2929;
+}
+
+.formulario__grupo-incorrecto .formulario__validacion-estado {
+	color: #bb2929;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__input {
+	border: 3px solid #bb2929;
+}
+
+
+.footer {
+    margin: 0.5rem 0 0.5rem 1rem;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    justify-content: space-around;
+}
+    
+.footer ul {
+    list-style: none;
+}
+.footer li {
+    float: left;
+    font-weight: 700;
+    text-align: center;  
+}
+.footer a {
+    text-decoration: none;
+    color: #4B0082 ;
+}
+.footer a:hover {
+    color: #FF6347;
+}   
+/* ----- -----  Mediaqueries ----- ----- */
+@media screen and (max-width: 767px) {
+    *{
+        margin: 0;
+        padding: 0.5rem;
+        box-sizing: border-box;
+    }
+    main {
+    background: #5DADE2;
+    }
+    .Recetas article p {
+        font-size: 1em;
+    }
+    .Recetas article h1{
+        font-size: 200%;
+    }
+     .Recetas article h2{
+        font-size: 180%;
+    }
+    .Recetas article h3{
+        font-size: 150%;
+    }
+    .Recetas article li{
+        font-size: 20px;
+    }    
+    .secciones article {
+        margin: 0.1rem;
+        min-height: 100px;   
+    }
+    .secciones article p
+    {
+    font-size: 1em;  
+    color: #1A5276;
+    } 
+    .secciones article h1
+    {   
+    font-size: 180%;
+    color: #D35400;;
+    }   
+    .header-menubar li {
+        font-size: 1.5rem;
+    }
+    .header-logo  {
+        width: 50%;
+    }
+    .footer {
+        font-size: 1rem;
+    }
+    .formulario {
+		grid-template-columns: 1fr;
+	}
+
+	.formulario__grupo-terminos, 
+	.formulario__mensaje,
+	.formulario__grupo-btn-enviar {
+		grid-column: 1;
+	}
+
+	.formulario__btn {
+		width: 100%;
+	}   
+    aside {
+    float:center;
+    width: 18rem;
+    } 
+.secciones img {
+    margin: 0.5rem 0.5rem 0.5rem 1rem;
+    width: 80%;
+
+}
+.Recetas img {
+    margin: 0.5rem 0.5rem 0.5rem 2.5rem;
+    width: 80%;
+
+}
+}
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+    main { 
+    background: #85C1E9;
+    }
+    .Recetas article p {
+        font-size: 1.2em;
+    }
+    .Recetas article h2{
+        font-size: 220%;
+    }
+    .Recetas article h3{
+        font-size: 175%;
+    }
+    .Recetas article li{
+        font-size: 25px;
+    }    
+    .secciones article p
+    {
+    font-size: 1.2em;  
+    color: #2980B9;
+    } 
+    .secciones article h1
+    {
+        font: 250%;
+        color: #FFA500;;
+    }   
+    .header-menubar li {
+        font-size: 2rem;
+
+    }
+    .header-logo {
+        width: 20%;
+    }
+    .footer {
+        font-size: 1.5rem;
+    }
+    aside{
+    float:right;
+    width: auto;    
+    } 
+    .secciones img {
+    margin: 0.5rem 0.5rem 0.5rem 10rem;
+    width: 70%;
+
+}
+.Recetas img {
+    margin: 0.5rem 0.5rem 0.5rem 10rem;
+    width: 70%;
+
+}
+}    
+    @media screen and (min-width: 1024px) {
+    main { background: #ADD8E6;
+    }
+    .Recetas article p {
+        font-size: 1.6em;
+    }
+    .Recetas article h2{
+        font-size: 250%;
+    }
+    .Recetas article h3{
+        font-size: 200%;
+    }
+    .Recetas article li{
+        font-size: 30px;
+    }    
+    .secciones article p
+    {
+        font-size: 1.5em;  
+    } 
+        .secciones article h1
+    {
+        font: 300%;
+        color: #FFA500;;
+    }   
+    .header-menubar li {
+        font-size: 2.5rem;
+    }
+    .header-logo {
+        width: 20%;
+    }
+    .footer {
+        font-size: 2rem;
+    }
+    aside{
+        float:right;
+        width: auto;    
+    } 
+    .secciones img {
+        margin: 0.5rem 0.5rem 0.5rem 15rem;
+        width: 60%;
+}
+.Recetas img {
+    margin: 0.5rem 0.5rem 0.5rem 15rem;
+    width: 60%;
+}
+} 
